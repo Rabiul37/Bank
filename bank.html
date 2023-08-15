@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Bank details</title>
+</head>
+<body>
+    <header>
+        <h1 class="text-4xl font-bold text-center ">Bank Details of <span class="text-orange-500">Rabiul</span>  </h1>
+    </header>
+    <main class="max-w-screen-md m-auto mt-10 shadow-xl bg-gray-100 p-10">
+        <div class="grid grid-cols-3 gap-10 text-white">
+            <div class="bg-gray-500 text-center p-5 rounded">
+                <h2 class="text-2xl font-semibold">Deposite</h2>
+                <h3 class="text-3xl font-semibold">$<span id="diposite" >00</span></h3>
+            </div>
+            <div class="bg-green-500 text-center p-5 rounded">
+                <h2 class="text-2xl font-semibold">Withdraw</h2>
+                <h3 class="text-3xl font-semibold">$ <span id="withdraw">00</span></h3>
+            </div>
+            <div class="bg-orange-400 text-center p-5 rounded">
+                <h2 class="text-2xl font-semibold">Balance</h2>
+                <h3 class="text-3xl font-semibold">$<span id="balance">100</span></h3>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-10 mt-5">
+       <div class="bg-gray-500 p-10 rounded">
+        <h1 class="text-1xl font-mediul text-white">Please Diposite</h1>
+        <input id="diposite-field" type="text"> 
+        <br>
+        <button id="btn-diposite" class="bg-gray-700 rounded mt-2 px-5 py-1 text-white font-semibold">Diposite</button>
+       </div>
+       <div class="bg-green-500 p-10 rounded">
+        <h1 class="text-1xl font-mediul text-white">Withdraw</h1>
+        <input id="withdraw-field" type="text"> 
+        <br>
+        <button id="btn-withdraw" class="bg-green-700 rounded mt-2 px-5 py-1 text-white font-semibold">Withdraw</button>
+       </div>
+        </div>
+       
+    </main>
+    <script src="js/bankDetails.js"></script>
+</body>
+</html>
